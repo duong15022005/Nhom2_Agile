@@ -1,0 +1,34 @@
+# Laravel vendor
+/vendor/
+composer.lock
+
+# Node modules
+/node_modules/
+
+# Environment files
+.env
+.env.*
+.env.local
+
+# Build files
+/dist/
+/build/
+
+# IDE settings
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+/storage/logs/
+/storage/framework/cache/data
+/storage/framework/sessions
+/storage/framework/testing
+
+# Laravel storage (không commit file tạm)
+public/storage
+
