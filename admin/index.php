@@ -47,13 +47,13 @@ $act = $_GET['act'] ?? '/';
 match ($act) {
     // Dashboards
     
-    '/'                 => (new AdminHomeController)->home(),
+    // '/'                 => (new AdminHomeController)->home(),
     // // Rout auth
     // 'login-admin' => (new AdminTaiKhoanController())->formLogin(),
     // 'check-login-admin' => (new AdminTaiKhoanController())->Login(),
     // 'logout-admin' => (new AdminTaiKhoanController())->Logout(),
     // Rout Danh Mục
-    'danh-muc' => (new AdminDanhMucController())->danhSachDanhMuc(),// Hiển Thị 
+    '/' => (new AdminDanhMucController())->danhSachDanhMuc(),// Hiển Thị 
     'from-them-danh-muc' => (new AdminDanhMucController())->fromAddDanhMuc(),// Thêm 
     'them-danh-muc' => (new AdminDanhMucController())->postAddDanhMuc(),
     'from-edit-danh-muc' => (new AdminDanhMucController())->fromEditDanhMuc(),// Sửa

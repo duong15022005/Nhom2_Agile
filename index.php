@@ -6,21 +6,21 @@ require_once './commons/function.php'; // Hàm hỗ trợ
 
 // Require toàn bộ file Controllers
 require_once './controllers/HomeController.php';
-require_once './controllers/KhuyenMaiController.php';
-require_once './controllers/LienHeController.php';
-require_once './controllers/TinTucController.php';
-require_once './controllers/SanPhamController.php';
+// require_once './controllers/KhuyenMaiController.php';
+// require_once './controllers/LienHeController.php';
+// require_once './controllers/TinTucController.php';
+// require_once './controllers/SanPhamController.php';
 
 // Require toàn bộ file Models
-require_once './models/SanPham.php';
-require_once './models/TaiKhoan.php';
-require_once './models/Banner.php';
-require_once './models/KhuyenMai.php';
-require_once './models/LienHe.php';
-require_once './models/TinTuc.php';
-require_once './models/GioHang.php';
-require_once './models/DonHang.php';
-require_once './models/BinhLuan.php';
+// require_once './models/SanPham.php';
+// require_once './models/TaiKhoan.php';
+// require_once './models/Banner.php';
+// require_once './models/KhuyenMai.php';
+// require_once './models/LienHe.php';
+// require_once './models/TinTuc.php';
+// require_once './models/GioHang.php';
+// require_once './models/DonHang.php';
+// require_once './models/BinhLuan.php';
 // Route
 $act = $_GET['act'] ?? '/';
 
@@ -29,7 +29,7 @@ $act = $_GET['act'] ?? '/';
 match ($act) {
 
     // Trang chủ
-    // '/' => (new HomeController())->home(),
+    '/' => (new HomeController())->home(),
     // // Giới thiệu
     // 'gioi-thieu' => (new HomeController())->GioiThieu(),
     //  // Đăng Nhập, Đăng ký
