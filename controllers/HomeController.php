@@ -1,7 +1,7 @@
 <?php
 require_once('./models/SanPham.php');
 require_once('./models/TaiKhoan.php');
-// require_once('./models/Banner.php');
+require_once('./models/Banner.php');
 require_once('./models/DanhMuc.php');
 // require_once('./models/TinTuc.php');
 require_once('./models/GioHang.php');
@@ -22,7 +22,7 @@ class HomeController
         // Khởi tạo các model
         $this->modelSanPham = new SanPham();
         $this->modelTaiKhoan = new TaiKhoan();
-        // $this->modelBanner = new AdminBanner();
+        $this->modelBanner = new AdminBanner();
         $this->modelDanhMuc = new AdminDanhMuc();
         // $this->TinTuc = new TinTuc();
         $this->modelGioHang = new GioHang();
@@ -37,7 +37,7 @@ class HomeController
     {
         // Get data for homepage
         $listSanPham = $this->modelSanPham->getAllSanPham(); // Lấy danh sách sản phẩm
-        // $listBanner = $this->modelBanner->getAllBanners(); // Lấy danh sách banner từ database
+        $listBanner = $this->modelBanner->getAllBanners(); // Lấy danh sách banner từ database
         $listDanhMuc = $this->modelDanhMuc->getAllDanhMuc(); // Lấy danh sách danh mục từ database
         // $listTinTuc = $this->TinTuc->getAllTinTuc(); // Get list of news articles
 
