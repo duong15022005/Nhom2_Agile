@@ -56,8 +56,8 @@ match ($act) {
     // // Rout Chi tiết sản phẩm
     'chi-tiet-san-pham' => (new HomeController())->chiTietSanPham(),
     // // Thêm Giỏ Hàng
-    // 'them-gio-hang' => (new HomeController())->themGioHang(),
-    // 'gio-hang' => (new HomeController())->gioHang(),
+    'them-gio-hang' => (new HomeController())->themGioHang(),
+    'gio-hang' => (new HomeController())->gioHang(),
     // // Thanh Toán
     // 'thanh-toan' => (new HomeController())->thanhToan(),
     // 'xu-ly-thanh-toan' => (new HomeController())->postThanhToan(),
