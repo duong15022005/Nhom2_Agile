@@ -3,24 +3,19 @@ session_start();
 // Require file Common
 require_once './commons/env.php'; // Khai báo biến môi trường
 require_once './commons/function.php'; // Hàm hỗ trợ
-
 // Require toàn bộ file Controllers
 require_once './controllers/HomeController.php';
-// require_once './controllers/KhuyenMaiController.php';
 // require_once './controllers/LienHeController.php';
-// require_once './controllers/TinTucController.php';
 require_once './controllers/SanPhamController.php';
-
 // Require toàn bộ file Models
 require_once './models/SanPham.php';
-// require_once './models/TaiKhoan.php';
-require_once './models/Banner.php';
-// require_once './models/KhuyenMai.php';
+require_once './models/TaiKhoan.php';
+require_once './models/Banner.php';;
 // require_once './models/LienHe.php';
-// require_once './models/TinTuc.php';
+
 require_once './models/GioHang.php';
 require_once './models/DonHang.php';
-// require_once './models/BinhLuan.php';
+
 // Route
 $act = $_GET['act'] ?? '/';
 
@@ -33,26 +28,12 @@ match ($act) {
     // // Giới thiệu
     'gioi-thieu' => (new HomeController())->GioiThieu(),
     //  // Đăng Nhập, Đăng ký
-    //  'login' => (new HomeController())->formlogin(),
-    //  'check-login' => (new HomeController())->postLogin(),
-    //  'register' => (new HomeController())->formRegister(),
-    //  'check-register' => (new HomeController())->postRegister(),
-    //  'logout-clinet' => (new HomeController())->Logout(),
-    // // Thay đổi thông tin cá nhân
-    // 'form-sua-thong-tin' => (new HomeController())->formEditCaNhan(),
-    // 'sua-thong-tin' => (new HomeController())->postEditCaNhan(),
-    // // Đổi mật khẩu
-    // 'doi-mat-khau' => (new HomeController())->formDoiMatKhau(), 
-    // 'sua-mat-khau' => (new HomeController())->postDoiMatKhau(),
-    // //khuyễn mãi
-    // 'khuyen-mai' => (new KhuyenMaiController())->danhSachKhuyenMai(),
-    // // Trang liên hệ
-    // 'lien-he' => (new LienHeController())->formLienHe(),
-    // 'gui-lien-he' => (new LienHeController())->guiLienHe(),
-    // //tin tức
-    // 'tin-tuc' => (new TinTucController())->danhSachTinTuc(),
-    // // 'detail-tin-tuc' => (new TinTucController())->danhSachTinTuc(),
-    // 'chiTietTinTuc' => (new TinTucController())->chiTietTinTuc($_GET['id'] ?? null),
+    'login' => (new HomeController())->formlogin(),
+    'check-login' => (new HomeController())->postLogin(),
+    'register' => (new HomeController())->formRegister(),
+    'check-register' => (new HomeController())->postRegister(),
+    'logout-clinet' => (new HomeController())->Logout(),
+
     // // Rout Chi tiết sản phẩm
     'chi-tiet-san-pham' => (new HomeController())->chiTietSanPham(),
     // // Thêm Giỏ Hàng
@@ -70,4 +51,3 @@ match ($act) {
     // // Tìm kiếm 
     // 'tim-kiem' => (new HomeController())->timKiemSanPham(),
 };
-?>
