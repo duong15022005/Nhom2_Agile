@@ -26,7 +26,7 @@ class HomeController
         $this->modelDanhMuc = new AdminDanhMuc();
         // $this->TinTuc = new TinTuc();
         $this->modelGioHang = new GioHang();
-        // $this->modelDonHang = new DonHang();
+        $this->modelDonHang = new DonHang();
 
         // Khởi tạo kết nối cơ sở dữ liệu
         $this->conn = new PDO("mysql:host=localhost;dbname=agile", "root", ""); // Thay đổi thông tin nếu cần
