@@ -13,7 +13,7 @@
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="<?= BASE_URL ?>"><i class=" fa fa-home"></i></a>
                                 </li>
-                                <!-- <li class="breadcrumb-item"><a href="shop.html">shop</a></li> -->
+                          
                                 <li class="breadcrumb-item active" aria-current="page">Thanh Toán</li>
                             </ul>
                         </nav>
@@ -30,23 +30,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="checkoutaccordion" id="checkOutAccordion">
-                        <!-- Mã Giảm Giá -->
-                        <div class="card">
-                            <h6>Bạn Có Voucher?<span data-bs-toggle="collapse" data-bs-target="#couponaccordion">Chọn
-                                    vào đây để nhập code</span></h6>
-                            <div id="couponaccordion" class="collapse" data-parent="#checkOutAccordion">
-                                <div class="card-body">
-                                    <div class="cart-update-option">
-                                        <div class="apply-coupon-wrapper">
-                                            <form action="#" method="post" class=" d-block d-md-flex">
-                                                <input type="text" placeholder="Xin mời nhập mã voucher" required />
-                                                <button class="btn btn-sqr">Xác nhận</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      
                     </div>
                 </div>
             </div>
