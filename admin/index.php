@@ -10,7 +10,7 @@ require_once '../commons/function.php'; // Hàm hỗ trợ
 // require_once 'controllers/DashboardController.php';
 require_once './controllers/AdminSanPhamController.php';
 require_once './controllers/AdminDanhMucController.php';
-// require_once './controllers/AdminDonHangController.php';
+require_once './controllers/AdminDonHangController.php';
 require_once './controllers/AdminTaiKhoanController.php';
 require_once './controllers/AdminHomeController.php';
 // require_once './controllers/AdminBinhLuanController.php';
@@ -94,13 +94,13 @@ match ($act) {
     // 'xoa-banner' => (new AdminBannerController())->deleteBanner(),
 
     // // Rout Đơn Hàng
-    // 'don-hang' => (new AdminDonHangController())->danhSachDonHang(),// Hiển Thị 
-    // 'from-edit-don-hang' => (new AdminDonHangController())->fromEditDonHang($_GET['id']),// Sửa
-    // 'edit-don-hang' => (new AdminDonHangController())->capNhatDonHang(),
-    // 'detail-don-hang' => (new AdminDonHangController())->detailDonHang(),
-    // 'chi-tiet-don-hang' => (new AdminDonHangController())->showDetail($_GET['id']),
-    // 'xoa-don-hang' => (new AdminDonHangController())->deleteDonHang($_GET['id']), //Xóa
-    // 'cap-nhat-trang-thai-don-hang' => (new AdminDonHangController())->capNhatTrangThaiDonHang(),
+    'don-hang' => (new AdminDonHangController())->danhSachDonHang(),// Hiển Thị 
+    'from-edit-don-hang' => (new AdminDonHangController())->fromEditDonHang($_GET['id']),// Sửa
+    'edit-don-hang' => (new AdminDonHangController())->capNhatDonHang(),
+    'detail-don-hang' => (new AdminDonHangController())->detailDonHang(),
+    'chi-tiet-don-hang' => (new AdminDonHangController())->showDetail($_GET['id']),
+    'xoa-don-hang' => (new AdminDonHangController())->deleteDonHang($_GET['id']), //Xóa
+    'cap-nhat-trang-thai-don-hang' => (new AdminDonHangController())->capNhatTrangThaiDonHang(),
     // // bình luận
     // 'binh-luan' => (new AdminBinhLuanController())->danhSachBinhLuan(),
     // 'hide-binh-luan' =>isset($_GET['id']) ? (new AdminBinhLuanController())->hideBinhLuan($_GET['id']) : null,
