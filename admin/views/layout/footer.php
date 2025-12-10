@@ -1,8 +1,8 @@
 <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>GROUP 04</b>
+      <b>GROUP 02</b>
     </div>
-    <strong>Dự Án 1: MixiShop</strong> All rights reserved.
+    <strong>Dự Án KFC Food</strong> 
 </footer>
 
   <!-- Control Sidebar -->
