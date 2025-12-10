@@ -40,14 +40,14 @@ match ($act) {
     'them-gio-hang' => (new HomeController())->themGioHang(),
     'gio-hang' => (new HomeController())->gioHang(),
     // // Thanh Toán
-    // 'thanh-toan' => (new HomeController())->thanhToan(),
-    // 'xu-ly-thanh-toan' => (new HomeController())->postThanhToan(),
-    // 'lich-su-mua-hang' => (new HomeController())->lichSuMuaHang(),
-    // 'chi-tiet-mua-hang' => (new HomeController())->chiTietMuaHang(),
-    // 'huy-don-hang' => (new HomeController())->huyDonHang(),
+    'thanh-toan' => (new HomeController())->thanhToan(),
+    'xu-ly-thanh-toan' => (new HomeController())->postThanhToan(),
+    'lich-su-mua-hang' => (new HomeController())->lichSuMuaHang(),
+    'chi-tiet-mua-hang' => (new HomeController())->chiTietMuaHang(),
+    'huy-don-hang' => (new HomeController())->huyDonHang(),
     'san-pham-theo-danh-muc' => (new SanPhamController())->sanPhamTheoDanhMuc($_GET['id_danh_muc'] ?? null), // Thêm route cho sản phẩm theo danh mục
     'san-pham' => (new SanPhamController())->tatCaSanPham(),
-    // 'xac-nhan-nhan-hang' => (new HomeController())->lichSuMuaHang(),
+    'xac-nhan-nhan-hang' => (new HomeController())->lichSuMuaHang(),
     // // Tìm kiếm 
     // 'tim-kiem' => (new HomeController())->timKiemSanPham(),
 };
