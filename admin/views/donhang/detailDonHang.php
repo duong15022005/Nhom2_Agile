@@ -61,7 +61,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['id'], $_POST['trang_th
     <?php endif; ?>
 
     <?php if (isset($_SESSION['error'])): ?>
-      <div class="error"><?= $_SESSION['error'] ?></div>
       <?php unset($_SESSION['error']); ?>
     <?php endif; ?>
     <div class="container-fluid">
