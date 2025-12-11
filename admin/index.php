@@ -11,14 +11,14 @@ require_once './controllers/AdminDanhMucController.php';
 require_once './controllers/AdminDonHangController.php';
 require_once './controllers/AdminTaiKhoanController.php';
 require_once './controllers/AdminHomeController.php';
-// require_once './controllers/AdminBannerController.php';
+require_once './controllers/AdminBannerController.php';
 
 // Require toàn bộ file Models
 require_once './models/AdminHome.php';
 require_once './models/AdminSanPham.php';
 require_once './models/AdminDanhMuc.php';
 require_once './models/AdminTaiKhoan.php';
-// require_once './models/AdminBanner.php';
+require_once './models/AdminBanner.php';
 
 // Route
 $act = $_GET['act'] ?? '/';
@@ -73,12 +73,12 @@ match ($act) {
     'edit-khach-hang' => (new AdminTaiKhoanController())->postEditKhachHang(),
     'chi-tiet-khach-hang' => (new AdminTaiKhoanController())->deltailKhachHang(),
     // // rout Banner 
-    // 'banner' => (new AdminBannerController())->danhSachBanner(),
-    // 'form-them-banner' => (new AdminBannerController())->fromAddBanner(),
-    // 'them-banner' => (new AdminBannerController())->postAddBanner(),
-    // 'form-sua-banner' => (new AdminBannerController())->fromEditBanner(),
-    // 'sua-banner' => (new AdminBannerController())->postEditBanner(),
-    // 'xoa-banner' => (new AdminBannerController())->deleteBanner(),
+    'banner' => (new AdminBannerController())->danhSachBanner(),
+    'form-them-banner' => (new AdminBannerController())->fromAddBanner(),
+    'them-banner' => (new AdminBannerController())->postAddBanner(),
+    'form-sua-banner' => (new AdminBannerController())->fromEditBanner(),
+    'sua-banner' => (new AdminBannerController())->postEditBanner(),
+    'xoa-banner' => (new AdminBannerController())->deleteBanner(),
 
     // // Rout Đơn Hàng
     'don-hang' => (new AdminDonHangController())->danhSachDonHang(),// Hiển Thị 
