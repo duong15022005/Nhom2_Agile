@@ -3,9 +3,7 @@ require_once('./models/SanPham.php');
 require_once('./models/TaiKhoan.php');
 require_once('./models/Banner.php');
 require_once('./models/DanhMuc.php');
-// require_once('./models/TinTuc.php');
 require_once('./models/GioHang.php');
-// require_once('./models/BinhLuan.php');
 
 class HomeController
 {
@@ -24,7 +22,6 @@ class HomeController
         $this->modelTaiKhoan = new TaiKhoan();
         $this->modelBanner = new AdminBanner();
         $this->modelDanhMuc = new AdminDanhMuc();
-        // $this->TinTuc = new TinTuc();
         $this->modelGioHang = new GioHang();
         $this->modelDonHang = new DonHang();
 

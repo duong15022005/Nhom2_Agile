@@ -79,8 +79,6 @@
                                                 <li><a href="<?= BASE_URL . '/?act=login' ?>">Đăng Nhập</a></li>
                                                 <li><a href="<?= BASE_URL . '/?act=register' ?>">Đăng Ký</a></li>
                                             <?php } else { ?>
-                                                <li><a href="<?= BASE_URL . '/?act=form-sua-thong-tin' ?>">Tài Khoản</a>
-                                                </li>
                                                 <li><a href="<?= BASE_URL . '/?act=lich-su-mua-hang' ?>">Đơn Hàng</a></li>
                                                 <li><a href="<?= BASE_URL . '/?act=logout-clinet' ?>">Đăng xuất</a></li>
                                             <?php } ?>
