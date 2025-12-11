@@ -48,7 +48,7 @@
                                             <td><?= $key+1 ?></td>
                                             <td><?= $sanPham['ten_san_pham'] ?></td>
                                             <td><img src="<?= BASE_URL . $sanPham['hinh_anh'] ?>" style="width: 100px" alt="" onerror="this.onerror=null; this.src=''"></td>
-                                            <td><?= $sanPham['gia_san_pham'] ?></td>
+                                            <td><?= number_format($sanPham['gia_san_pham'], 0, ',', '.') ?></td>
                                             <td><?= $sanPham['so_luong'] ?></td>
                                             <td><?= $sanPham['ten_danh_muc'] ?></td>
                                             <td><?= $sanPham['trang_thai'] == 1 ? 'Còn Hàng' : 'Hết Hàng' ?></td>
