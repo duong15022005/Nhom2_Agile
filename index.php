@@ -6,12 +6,15 @@ require_once './commons/function.php'; // Hàm hỗ trợ
 // Require toàn bộ file Controllers
 require_once './controllers/HomeController.php';
 require_once './controllers/SanPhamController.php';
+require_once './controllers/LienHeController.php';
+
 // Require toàn bộ file Models
 require_once './models/SanPham.php';
 require_once './models/TaiKhoan.php';
 require_once './models/Banner.php';;
 require_once './models/GioHang.php';
 require_once './models/DonHang.php';
+require_once './models/LienHe.php';
 
 // Route
 $act = $_GET['act'] ?? '/';
@@ -43,6 +46,11 @@ match ($act) {
     'san-pham-theo-danh-muc' => (new SanPhamController())->sanPhamTheoDanhMuc($_GET['id_danh_muc'] ?? null), // Thêm route cho sản phẩm theo danh mục
     'san-pham' => (new SanPhamController())->tatCaSanPham(),
     'xac-nhan-nhan-hang' => (new HomeController())->lichSuMuaHang(),
+      // Giới thiệu
+    'gioi-thieu' => (new HomeController())->GioiThieu(),
+        // Trang liên hệ
+    'lien-he' => (new LienHeController())->formLienHe(),
+    'gui-lien-he' => (new LienHeController())->guiLienHe(),
     // // Tìm kiếm 
     // 'tim-kiem' => (new HomeController())->timKiemSanPham(),
 };
